@@ -77,7 +77,7 @@ def edit(id):
 
         if error is None:
             db.session.commit()
-            return redirect(url_for('admin.content', type=type))
+            return redirect(url_for('admin.content', type=type.name))
 
         flash(error)
 
