@@ -31,7 +31,7 @@ def create(type):
             if not title:
                 error = "Title must not be empty."
             elif not type_id:
-                "Type must not be empty."
+                error = "Type must not be empty."
 
             if error is None:
                 content = Content(title=title, slug=slug, type_id=type_id, body=body)

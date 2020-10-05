@@ -14,7 +14,7 @@
         <div class="field">
           <label class="label">Title</label>
           <div class="control">
-            <input name="title" class="input"></input>
+            <input name="title" class="input">
           </div>
         </div>
         <div class="field">
@@ -46,7 +46,7 @@
             <input class="button is-link" type="submit" value="Submit">
           </div>
           <div class="control">
-            <a class="button is-text" href="{{ url_for('admin.content', type=type) }}">Cancel</a>
+            <a class="button is-text" href="{{ url_for('admin.content', type=type_name) }}">Cancel</a>
           </div>
         </div>
       </form>
